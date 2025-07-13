@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Redirección a SharePoint</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            text-align: center;
+            padding: 50px;
+        }
+
+        h1 {
+            color: #2c3e50;
+        }
+
+        p {
+            font-size: 18px;
+            color: #555;
+        }
+
+        button {
+            background-color: #69b4ee;
+            color: rgb(243, 210, 210);
+            border: none;
+            padding: 12px 24px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #005a9e;
+        }
+    </style>
+</head>
+<body>
+    <h1>Acceso a Carpeta de SharePoint</h1>
+    <p>Haz clic en el botón para ir a la carpeta:</p>
+    <button onclick="redirigirASharePoint()">Ir a SharePoint</button>
+
+    <script>
+        function redirigirASharePoint() {
+            const url = "https://femcom.sharepoint.com/sites/cedis_smo/Documentos%20compartidos/Forms/AllItems.aspx?FolderCTID=0x012000DB4F9A9DE913E345853EA7C391035BA9&id=%2Fsites%2Fcedis%5Fsmo%2FDocumentos%20compartidos%2FGeneral%2FPANTALLAS";
+            window.location.href = url;
+        }
+    </script>
+</body>
+</html>
